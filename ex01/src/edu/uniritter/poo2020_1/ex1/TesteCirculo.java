@@ -1,8 +1,32 @@
 package edu.uniritter.poo2020_1.ex1;
 
+import java.util.Date;
+
 public class TesteCirculo {
 
 	public static void main(String[] args) {
+		Ponto ponto1 = new Ponto(10,10);
+		Circulo circulo1 = new Circulo(ponto1, 1);
+		
+		Circulo circulo2 = new Circulo(ponto1, 1);
+		
+		Circulo circulo3 = circulo1;
+		
+		Date agora = new Date();
+		System.out.println(agora);
+		
+		
+//		System.out.println("usando == "+(circulo1==circulo2));
+//		System.out.println("usando equals "+ (circulo1==circulo2));
+
+		System.out.println("usando == "+(circulo1==circulo3));
+		System.out.println("usando equals "+ (circulo1==circulo3));
+		
+		
+		
+		
+		
+		
 		
 		System.out.println(Circulo.piX2());		
 
