@@ -1,12 +1,18 @@
-package ex02;
+package ex02.conta;
 
 public class Conta {
 	
 	private String numero;
 	private Double saldo;
+	private TipoConta tipoConta;
 	
-	public Conta(String numero){
+	public Conta(){
+		this("sem número", TipoConta.PADRAO);
+	}
+	
+	public Conta(String numero, TipoConta tipoConta){
 		this.numero = numero;
+		this.tipoConta = tipoConta;
 		saldo = new Double(0);
 	}
 	
@@ -20,7 +26,7 @@ public class Conta {
 	
 	@Override	
 	public String toString(){
-		return "O saldo atual da conta " + this.numero + " é " + this.saldo;		
+		return "O saldo atual da conta " + this.numero + " de tipo "+ this.tipoConta + " é " + this.saldo;		
 	}
 	
 
