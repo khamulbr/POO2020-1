@@ -1,7 +1,7 @@
 package ex07.model;
 
-public abstract class Funcionario {
-	
+public abstract class Funcionario  {
+
 	private String nome;
 
 	private String cpf;
@@ -30,5 +30,16 @@ public abstract class Funcionario {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+	
+	@Override
+	public String toString() {
+		return "Funcionario [nome=" + nome + ", cpf=" + cpf + ", salario=" + salario + "]";
 	}	
+	
+	public Double getSalario() {
+		return this.salario;
+	}
+	
+	
 }

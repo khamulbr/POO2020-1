@@ -1,6 +1,6 @@
 package ex07.model;
 
-public class Operador extends Funcionario {
+public class Operador extends Funcionario implements Incomodador {
 	
 	@Override
 	public void setBonificacao(Double bonificacao) {
@@ -9,6 +9,12 @@ public class Operador extends Funcionario {
 
 	public void opera() {
 		System.out.println("estou operando!");
+	}
+
+	@Override
+	public String soPraIncomodar() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

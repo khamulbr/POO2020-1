@@ -11,20 +11,25 @@ public class TesteBonificacoes {
 	public static void main(String[] args) {
 		ControleBonificacoes ctb = new ControleBonificacoes();
 		
+		
 		Funcionario sup1 = new Supervisor();
 		sup1.setNome("João");
 		sup1.setCpf("841903481093");
 		sup1.setBonificacao(1000.0);
 		
-		Funcionario ge1 = new Gerente();
+		Gerente ge1 = new Gerente();
 		ge1.setNome("Pedro");
 		ge1.setCpf("2938412094");
 		ge1.setBonificacao(5000.0);
+		ge1.fornecerAumento(1.2);
+		
+		System.out.println(ge1);
 		
 		Funcionario sa1 = new SecretariaAdministrativa();
 		sa1.setNome("Maria");
 		sa1.setCpf("2983129301");
 		sa1.setBonificacao(2000.0);
+		System.out.println(sa1.toString());
 		
 		Funcionario se1 = new SecretariaExecutiva();
 		se1.setNome("Júlia");
