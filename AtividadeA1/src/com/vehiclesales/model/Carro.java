@@ -81,6 +81,54 @@ public class Carro {
 		return this.chassi;
 	}
 
+	public String getModelo() {
+		return modelo;
+	}
+
+	public String getCor() {
+		return cor;
+	}
+
+	public Integer getAno() {
+		return ano;
+	}
+
+	public Marca getMarca() {
+		return marca;
+	}
+
+	public Proprietario getProprietario() {
+		return proprietario;
+	}
+
+	public Integer getVelocidadeMaxima() {
+		return velocidadeMaxima;
+	}
+
+	public Integer getVelocidadeAtual() {
+		return velocidadeAtual;
+	}
+
+	public Integer getNumeroDePortas() {
+		return numeroDePortas;
+	}
+
+	public Boolean getTemTetoSolar() {
+		return temTetoSolar;
+	}
+
+	public Integer getNumeroDeMarchas() {
+		return numeroDeMarchas;
+	}
+
+	public Integer getMarchaAtual() {
+		return marchaAtual;
+	}
+
+	public Double getCapacidadeCombustivel() {
+		return capacidadeCombustivel;
+	}
+
 	
 	
 }
