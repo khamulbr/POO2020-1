@@ -98,8 +98,8 @@ public class Collections {
 			System.out.println("José ainda está aqui");
 		}
 		
-		System.out.println(hm.keySet().toArray().toString());
-		System.out.println(hm.values().toArray().toString());
+		System.out.println(hm.keySet().toArray());
+		System.out.println(hm.values().toArray());
 
 		
 		
